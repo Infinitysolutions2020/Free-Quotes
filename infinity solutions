@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Instant Estimates</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Get Your Free Instant Estimate</h1>
+        <form id="estimateForm">
+            <label for="service">Select Service:</label>
+            <select id="service" name="service">
+                <option value="pressure_washing">Exterior Pressure Washing</option>
+                <option value="exterior_painting_1_floor">Exterior Painting (1 Floor)</option>
+                <option value="exterior_painting_2_floors">Exterior Painting (2 Floors)</option>
+                <option value="siding_replacement">Siding Replacement</option>
+            </select>
+
+            <label for="area">Enter Area (sq ft):</label>
+            <input type="number" id="area" name="area" required>
+
+            <button type="button" onclick="calculateEstimate()">Get Estimate</button>
+        </form>
+
+        <div id="estimateResult"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
